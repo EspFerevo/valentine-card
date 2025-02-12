@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import {SecondSurprise} from "./components/secondSurprise";
-import { Button } from "./components/button";
+import SecondSurprise from "./components/secondSurprise"; 
+import { Button } from "./components/button"; 
 import { motion } from "framer-motion";
 import "./index.css";
 
@@ -16,9 +16,7 @@ export default function ValentineCard() {
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.5 }}
         >
-          <h1 className="card-title">
-            Happy Valentine's Day! 💖
-          </h1>
+          <h1 className="card-title">Happy Valentine's Day! 💖</h1>
           <p className="card-description">
             You are the most wonderful person in the world! May this day be filled with love and joy. 💕
           </p>
@@ -36,8 +34,7 @@ export default function ValentineCard() {
                 You are my most beloved person! 💘
               </motion.p>
 
-              {/* Используем компонент SecondSurprise правильно */}
-              <SecondSurprise />
+              <SecondSurprise />  {/* компонент SecondSurprise */}
             </>
           )}
         </motion.div>
