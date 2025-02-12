@@ -1,13 +1,19 @@
-/* src/index.css */
 /* Основные стили */
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #FBCFE8; /* Цвет фона для всего тела */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
   margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.relative {
+  position: relative;
+  height: 100vh;
+  background-color: #FBCFE8;
+}
+
+.z-10 {
+  z-index: 10;
 }
 
 .card {
@@ -18,21 +24,23 @@ body {
   text-align: center;
   max-width: 400px;
   width: 100%;
+  position: relative;
+  z-index: 20;
 }
 
-.card h1 {
+.card-title {
   font-size: 2rem;
-  color: #F87171; /* Красный цвет */
+  color: #F87171;
   margin-bottom: 1rem;
 }
 
-.card p {
-  color: #4B5563; /* Серый цвет текста */
+.card-description {
+  color: #4B5563;
   margin-bottom: 1.5rem;
 }
 
 .button {
-  background-color: #F87171; /* Красный цвет */
+  background-color: #F87171;
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
@@ -41,7 +49,7 @@ body {
 }
 
 .button:hover {
-  background-color: #EF4444; /* Тёмно-красный при наведении */
+  background-color: #EF4444;
 }
 
 .message {
