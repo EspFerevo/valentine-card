@@ -4,12 +4,12 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  background-color: #f4f4f4; /* Нейтральный фон */
 }
 
 .relative {
   position: relative;
   height: 100vh;
-  background-color: #FBCFE8;
 }
 
 .z-10 {
@@ -30,17 +30,17 @@ body {
 
 .card-title {
   font-size: 2rem;
-  color: #F87171;
+  color: #333333; /* Темный, но не слишком резкий цвет */
   margin-bottom: 1rem;
 }
 
 .card-description {
-  color: #4B5563;
+  color: #555555; /* Мягкий серый */
   margin-bottom: 1.5rem;
 }
 
 .button {
-  background-color: #F87171;
+  background-color: #6c757d; /* Спокойный серый */
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
@@ -49,12 +49,16 @@ body {
 }
 
 .button:hover {
-  background-color: #EF4444;
+  background-color: #5a6268; /* Темнее при наведении */
 }
 
 .message {
   margin-top: 1rem;
   font-size: 1.25rem;
-  color: #F87171;
+  color: #6c757d; /* Спокойный серый для текста */
   font-weight: bold;
+}
+
+.mt-4 {
+  margin-top: 1rem; /* Добавляем отступ для второй кнопки */
 }
