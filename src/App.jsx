@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import {SecondSurprise} from "./components/ui/secondSurprise"
-import { Button } from "./components/ui/button";
+import {SecondSurprise} from "./components/secondSurprise";
+import { Button } from "./components/button";
 import { motion } from "framer-motion";
 import "./index.css";
 
@@ -36,7 +36,7 @@ export default function ValentineCard() {
                 You are my most beloved person! 💘
               </motion.p>
 
-              {SecondSurprise}
+              {/* Используем компонент SecondSurprise правильно */}
               <SecondSurprise />
             </>
           )}
