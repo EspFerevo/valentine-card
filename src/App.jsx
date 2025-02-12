@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import SecondSurprise from "./components/secondSurprise"; 
-import { Button } from "./components/button"; 
+import SecondSurprise from "./components/secondSurprise";
+import { Button } from "./components/button";
 import { motion } from "framer-motion";
 import "./index.css";
 
@@ -16,11 +16,17 @@ export default function ValentineCard() {
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.5 }}
         >
-          <h1 className="card-title">Happy Valentine's Day! 💖</h1>
+          <h1 className="card-title">Happy Valentine's Day, my love! 💖</h1>
           <p className="card-description">
-            You are the most wonderful person in the world! May this day be filled with love and joy. 💕
+            You are the most amazing thing that has ever happened to me. Every
+            day with you feels like a celebration, and your smile is the reason
+            for my happiness. On this special day, I want to give you even more
+            love, joy, and magic. You deserve nothing but the best. 💕
           </p>
-          <Button onClick={() => setShowMessage(!showMessage)} className="button">
+          <Button
+            onClick={() => setShowMessage(!showMessage)}
+            className="button"
+          >
             {showMessage ? "Hide" : "Show"} Surprise
           </Button>
           {showMessage && (
@@ -31,10 +37,11 @@ export default function ValentineCard() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
               >
-                You are my most beloved person! 💘
+                You are my most beloved, unique, and incredible person! 💘 Every
+                moment with you is a gift, and I am so thankful for having you
+                in my life. I love you with all my heart.
               </motion.p>
-
-              <SecondSurprise />  {/* компонент SecondSurprise */}
+              <SecondSurprise /> {/* компонент SecondSurprise */}
             </>
           )}
         </motion.div>
